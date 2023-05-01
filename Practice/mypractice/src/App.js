@@ -7,6 +7,7 @@ import Timer from './cpmponents/Timer';
 import UserForm from './cpmponents/UserForm';
 import Product from './cpmponents/Product';
 import StopWatch from './cpmponents/StopWatch';
+import Background from './cpmponents/Callback';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           {/* <Timer /> */}
           {/* <UserForm /> */}
       {/* <Product /> */}
-      <StopWatch />
+      {/* <StopWatch /> */}
+      <Background />
       </div>
   );
 }
