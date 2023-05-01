@@ -1,0 +1,18 @@
+#pro{
+    border: 0px solid green;
+
+
+}
+#pro>img{
+    width: 80%;
+    border: 0px solid blue;
+    padding: 10px;
+}
+#main{
+        border: 1px solid rgb(128, 0, 0);
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
