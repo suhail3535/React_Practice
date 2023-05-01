@@ -1,25 +1,30 @@
-// const myPromise = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         const randomNumber = Math.random();
-//         if (randomNumber < 0.5) {
-//             resolve(randomNumber);
-//         } else {
-//             reject(new Error("Random number is greater than 0.5"));
-//         }
-//     }, 1000);
-// });
+//
 
-// myPromise
-//     .then((result) => {
-//         console.log(`Promise fulfilled with result: ${result}`);
-//     })
-//     .catch((error) => {
-//         console.error(`Promise rejected with error: ${error}`);
-//     });
-<div>
-    <h2>Stopwatch</h2>
-    <p id="timer">00:00:00</p>
-    <button id="start-btn">Start</button>
-    <button id="stop-btn">Stop</button>
-    <button id="reset-btn">Reset</button>
-</div>;
+let matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+];
+
+let r = 3;
+let c = 3;
+
+// output = [
+//     [7,4,1],
+//     [8,5,2],
+//     [9,6,3],
+// ]
+// [
+//   [7, 4, 1],
+//   [8, 5, 2],
+//   [9, 6, 3]
+// ]
+let arr1 = [];
+for (let i = 0; i < c; i++) {
+    let bag = "";
+    for (let j = r - 1; j >= 0; j--) {
+        bag = bag + matrix[j][i] + " ";
+    }
+    arr1.push(bag);
+}
+console.log(arr1);
