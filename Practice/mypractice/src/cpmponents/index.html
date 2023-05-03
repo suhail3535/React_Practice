@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
   <h2>Stopwatch</h2>
   <p id="timer">00:00:00</p>
   <button id="start-btn">Start</button>
@@ -48,5 +48,38 @@ function formatTime(time) {
 startButton.addEventListener('click', startTimer);
 stopButton.addEventListener('click', stopTimer);
 resetButton.addEventListener('click', resetTimer);
+
+</script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="search" onchange={main()}>
+</body>
+</html>
+<script>
+  let count=0;
+function getData(){
+  console.log("fetching"+count++)
+}
+function debounce(call,delay){
+  let timer;
+  return function(...args){
+if(timer)
+clearTimeout(timer)
+ timer=setTimeout(()=>{
+  call()
+ },delay)
+
+}
+
+}
+const main=debounce(getData,1000)
+
 
 </script>
