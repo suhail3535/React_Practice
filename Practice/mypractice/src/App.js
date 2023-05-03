@@ -8,6 +8,8 @@ import UserForm from './cpmponents/UserForm';
 import Product from './cpmponents/Product';
 import StopWatch from './cpmponents/StopWatch';
 import Background from './cpmponents/Callback';
+import Todo from './cpmponents/Memo';
+import AppMemo from './cpmponents/Memo';
 
 function App() {
   return (
@@ -17,9 +19,11 @@ function App() {
           {/* <Textt /> */}
           {/* <Timer /> */}
           {/* <UserForm /> */}
-      {/* <Product /> */}
-      {/* <StopWatch /> */}
-      <Background />
+          {/* <Product /> */}
+          {/* <StopWatch /> */}
+          {/* <Background /> */}
+          {/* <Todo /> */}
+          <AppMemo/>
       </div>
   );
 }
