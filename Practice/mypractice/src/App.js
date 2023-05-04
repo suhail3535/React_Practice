@@ -10,6 +10,9 @@ import StopWatch from './cpmponents/StopWatch';
 import Background from './cpmponents/Callback';
 import Todo from './cpmponents/Memo';
 import AppMemo from './cpmponents/Memo';
+import { UseCall } from './cpmponents/UseCall';
+import RandomNumberGenerator from './cpmponents/Random';
+import Genrator from './cpmponents/Random';
 
 function App() {
   return (
@@ -23,7 +26,12 @@ function App() {
           {/* <StopWatch /> */}
           {/* <Background /> */}
           {/* <Todo /> */}
-          <AppMemo/>
+      {/* <AppMemo/> */}
+      {/* <RandomNumberGenerator />
+       */}
+      {/* <UseCall /> */}
+      <Genrator />
+
       </div>
   );
 }
