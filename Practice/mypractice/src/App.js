@@ -39,7 +39,8 @@ function App() {
       {/* <Child1 /> */}
       {/* <Child2 /> */}
       {/* <Set /> */}
-      <Header />
+      {/* <Header /> */}
+      <MyComponent />
       </div>
   );
 }
