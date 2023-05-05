@@ -16,3 +16,18 @@
     gap: 20px;
     grid-template-columns: repeat(4,1fr);
 }
+
+/* Default styles for all themes */
+
+
+/* Styles for the light theme */
+.theme{
+  background-color: white;
+  color: black;
+}
+
+/* Styles for the dark theme */
+.theme{
+  background-color: black;
+  color: white;
+}

@@ -15,6 +15,7 @@ import RandomNumberGenerator from './cpmponents/Random';
 import Genrator from './cpmponents/Random';
 import { Child1, Child2, Parent } from './cpmponents/Prop';
 import Set from './cpmponents/Set';
+import Header from './cpmponents/Contexuse';
 
 function App() {
   return (
@@ -34,10 +35,11 @@ function App() {
       {/* <UseCall /> */}
       {/* <Genrator />
       < */}
-      <Parent />
-      <Child1 />
-      <Child2 />
-{/* <Set /> */}
+      {/* <Parent /> */}
+      {/* <Child1 /> */}
+      {/* <Child2 /> */}
+      {/* <Set /> */}
+      <Header />
       </div>
   );
 }
