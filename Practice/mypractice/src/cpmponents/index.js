@@ -158,24 +158,74 @@
 // 	}
 // }
 // console.log(sMax,)
-function appearOne(arr) {
-  let obj = {};
-  for (let i = 0; i < arr.length; i++) {
-    if (obj[arr[i]] === undefined) {
-      obj[arr[i]] = 1;
-    } else {
-      obj[arr[i]]++;
-    }
-    }
-    console.log(obj)
-  let oneKey;
-  for (let key in obj) {
-    if (obj[key] == 1) {
-      oneKey = key;
-      break;
-    }
+// function appearOne(arr) {
+//   let obj = {};
+//   for (let i = 0; i < arr.length; i++) {
+//     if (obj[arr[i]] === undefined) {
+//       obj[arr[i]] = 1;
+//     } else {
+//       obj[arr[i]]++;
+//     }
+//     }
+//     console.log(obj)
+//   let oneKey;
+//   for (let key in obj) {
+//     if (obj[key] == 1) {
+//       oneKey = key;
+//       break;
+//     }
+//   }
+//   console.log(oneKey);
+// }
+// let arr = [7,7,8,8,1, 2, 2, 3, 3, 4, 5, 5, 4];
+// appearOne(arr);
+
+// function userDetails (name,lastName,callback) {
+//   let details = 'my name is' + ' ' + name + ' '+ 'and lastName is' +' '+ lastName + '.'
+//   callback(details);
+// }
+
+// userDetails('suhail', 'khan', function (details) {
+//   console.log(details)
+// })
+// class Animal {
+//   constructor(name, sound) {
+//     this.name = name;
+//     this.sound = sound;
+//   }
+
+//   speak() {
+//     console.log(`${this.name} says ${this.sound}`);
+//   }
+// }
+
+// const dog = new Animal('Fido', 'woof');
+// dog.speak(); // Output: "Fido says woof"
+// ***********constructor function********
+
+// function Animal (name, age) {
+//   this.name = name;
+//   this.age = age;
+//   this.sayHello = function () {
+//     console.log(`my name is ${this.name} and my age is ${this.age}`)
+//   }
+// }
+// const data = new Animal("blueberry", 30)
+// data.sayHello();
+
+
+/**********fuctory function********* */
+
+function userDetails (name,course) {
+return{
+  name,
+  course,
+  sayHello () {
+    console.log(`my name is ${this.name} ans course is ${this.course}`)
   }
-  console.log(oneKey);
+
 }
-let arr = [7,7,8,8,1, 2, 2, 3, 3, 4, 5, 5, 4];
-appearOne(arr);
+}
+
+const john = userDetails("masai", "dataengineer")
+john.sayHello();

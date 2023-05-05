@@ -13,6 +13,8 @@ import AppMemo from './cpmponents/Memo';
 import { UseCall } from './cpmponents/UseCall';
 import RandomNumberGenerator from './cpmponents/Random';
 import Genrator from './cpmponents/Random';
+import { Child1, Child2, Parent } from './cpmponents/Prop';
+import Set from './cpmponents/Set';
 
 function App() {
   return (
@@ -30,8 +32,12 @@ function App() {
       {/* <RandomNumberGenerator />
        */}
       {/* <UseCall /> */}
-      <Genrator />
-
+      {/* <Genrator />
+      < */}
+      <Parent />
+      <Child1 />
+      <Child2 />
+{/* <Set /> */}
       </div>
   );
 }
