@@ -16,6 +16,7 @@ import Genrator from './cpmponents/Random';
 import { Child1, Child2, Parent } from './cpmponents/Prop';
 import Set from './cpmponents/Set';
 import Header from './cpmponents/Contexuse';
+import Get from './cpmponents/Get';
 
 function App() {
   return (
@@ -40,7 +41,9 @@ function App() {
       {/* <Child2 /> */}
       {/* <Set /> */}
       {/* <Header /> */}
-      <MyComponent />
+      {/* <MyComponent />
+       */}
+      <Get />
       </div>
   );
 }
