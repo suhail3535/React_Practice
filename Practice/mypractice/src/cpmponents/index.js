@@ -288,44 +288,46 @@
 // // //   count--
 // // // }
 // // // console.log(arr.join(" "))
+//  let arr = [1, 2, 0, 4, 5];
+// // let arr=[3,-4,1,2,-1]
+// let n = arr1.length;
+// let m = arr2.length;
+// let l = n+m
+// let arr3 = new Array(l)
+// let i = 0;
+// let j = 0;
+// let k = 0;
 
-// // let n = arr1.length;
-// // let m = arr2.length;
-// // let l = n+m
-// // let arr3 = new Array(l)
-// // let i = 0;
-// // let j = 0;
-// // let k = 0;
+// while (i < n && j < m) {
+//   if (arr1[i] < arr2[j]) {
+//     arr3[k] = arr1[i];
+//     i++;
+//     k++
+//   } else if (arr2[j] < arr1[i]) {
+//     arr3[k]=arr2[j]
+//     j++;
+//     k++;
+//   } else if (arr1[i] === arr2[j]) {
+//     arr3[k] = arr1[i];
+//     i++;
+//     k++
+//     arr3[k] = arr2[j];
+//     j++;
+//     k++
+// }
+// }
+// while (i < n) {
+//   arr3[k] = arr1[i];
+//   i++;
+//   k++;
+// }
+// while (j < m) {
+//     arr3[k] = arr2[j];
+//     j++;
+//     k++;
+// }
+// console.log(arr3.join(" "))
 
-// // while (i < n && j < m) {
-// //   if (arr1[i] < arr2[j]) {
-// //     arr3[k] = arr1[i];
-// //     i++;
-// //     k++
-// //   } else if (arr2[j] < arr1[i]) {
-// //     arr3[k]=arr2[j]
-// //     j++;
-// //     k++;
-// //   } else if (arr1[i] === arr2[j]) {
-// //     arr3[k] = arr1[i];
-// //     i++;
-// //     k++
-// //     arr3[k] = arr2[j];
-// //     j++;
-// //     k++
-// // }
-// // }
-// // while (i < n) {
-// //   arr3[k] = arr1[i];
-// //   i++;
-// //   k++;
-// // }
-// // while (j < m) {
-// //     arr3[k] = arr2[j];
-// //     j++;
-// //     k++;
-// // }
-// // console.log(arr3.join(" "))
 // const LinkedListNode = class {
 //     constructor(nodeData) {
 //         this.data = nodeData;
@@ -343,6 +345,7 @@
 //         }
 //         current = current.next;
 //     }
+
 //     let count = 0;
 //     for (let key in obj) {
 //         if (obj[key] % 2 === 1) {
@@ -356,7 +359,40 @@
 //     }
 // };
 // palindrome(121);
+const LinkedListNode = class {
+    constructor(nodeData) {
+        this.data = nodeData;
+        this.next = null;
+    }
+};
+// Complete the function below
+var isPalindrome = function (head) {
+    let current = head;
+    let obj = {};
+    while (current !== null) {
+        if (obj[current.data] === undefined) {
+            obj[current.data] = 1;
+        } else {
+            obj[current.data]++;
+        }
+        current = current.next;
+    }
+    let count = 0;
 
+    for (let key in obj) {
+        if (obj[key] % 2 !== 0) {
+            count++;
+        }
+    }
+    if (count <= 1) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+
+isPalindrome(121)
 // function find(n) {
 //   if (n < 0) {
 //     return 0;
@@ -390,14 +426,71 @@
 // }
 // find(arr);
 
+// function find (n) {
+//   let sum = 1;
+//   for (let i = 1; i <= n; i++){
+//     sum=sum*i
+//   }
+//   console.log(sum)
+// }
+// find(5)
+// let n = 5;
+// let arr = [1, 2, 0, 4, 5];
+// let arr=[3,-4,1,2,-1]
 
+// function find(arr) {
+//     let maxsum = arr[0];
+//     let maxindix = arr[0];
+//     for (let i = 1; i < n; i++) {
+//         maxindix = Math.max(arr[i], maxindix + arr[i]);
+//         maxsum = Math.max(maxsum, maxindix);
+//     }
+//     console.log(maxsum);
+// }
+// find(arr);
 
+// let arr=[4,5,-1,2]
+// function find (arr) {
 
-function find (n) {
-  let sum = 1;
-  for (let i = 1; i <= n; i++){
-    sum=sum*i
-  }
-  console.log(sum)
-}
-find(5)
+//   let maxpro = arr[0];
+//   for (let i = 0; i < arr.length; i++){
+//     let prodduct = 1;
+//     for (let j = i; j < arr.length; j++){
+//       prodduct = prodduct * arr[j];
+//       // console.log(prodduct)
+//       maxpro = Math.max(maxpro, prodduct);
+//     }
+//   }
+// console.log(maxpro)
+
+// }
+// find(arr)
+// let num = 2085;
+// function find(num) {
+//     let value = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+//     let sym = [
+//         "M",
+//         "CM",
+//         "D",
+//         "CD",
+//         "C",
+//         "XC",
+//         "L",
+//         "XL",
+//         "X",
+//         "IX",
+//         "V",
+//         "IV",
+//         "I",
+//     ];
+//     let bag = "";
+
+//     for (let i = 0; i < value.length; i++) {
+//         while (value[i] <= num) {
+//             bag = bag + sym[i];
+//             num = num - value[i];
+//         }
+//   }
+//   console.log(bag)
+// }
+// find(num);
