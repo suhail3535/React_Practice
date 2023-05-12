@@ -494,3 +494,8 @@ isPalindrome(121)
 //   console.log(bag)
 // }
 // find(num);
+
+
+
+
+

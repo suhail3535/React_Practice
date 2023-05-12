@@ -33,7 +33,7 @@ function AppMemo() {
         <div className="App">
             <h1>count:{count}</h1>
             <h2>item:{item}</h2>
-            <h3>{useMemozition}</h3>
+            <h3 style={{fontSize:""}}>{useMemozition}</h3>
             <button onClick={() => setCount(count + 1)}>Count++</button>
             <button onClick={() => setItem(item * 5)}>Item++</button>
         </div>
