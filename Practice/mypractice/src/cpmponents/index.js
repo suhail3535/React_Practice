@@ -272,22 +272,22 @@
 // // // console.log(bag)
 // // console.log(word+" "+bag)
 
-// // let N=5
-// // let arr1 = [1, 5,7,9]
-// // let arr2 = [2,4,6,8];
+// let N=5
+// let arr1 = [1, 5,7,9]
+// let arr2 = [2,4,6,8];
 
-// // // let count = 0;
-// // // for (let i = 0; i < arr.length; i++){
-// // //   if (arr[i] === 0) {
-// // //     count++;
-// // //   }
-// // // }
-// // // arr = arr.filter((ele) => ele !== 0)
-// // // while (count > 0) {
-// // //   arr.push(0)
-// // //   count--
-// // // }
-// // // console.log(arr.join(" "))
+// // let count = 0;
+// // for (let i = 0; i < arr.length; i++){
+// //   if (arr[i] === 0) {
+// //     count++;
+// //   }
+// // }
+// // arr = arr.filter((ele) => ele !== 0)
+// // while (count > 0) {
+// //   arr.push(0)
+// //   count--
+// // }
+// // console.log(arr.join(" "))
 //  let arr = [1, 2, 0, 4, 5];
 // // let arr=[3,-4,1,2,-1]
 // let n = arr1.length;
@@ -359,40 +359,40 @@
 //     }
 // };
 // palindrome(121);
-const LinkedListNode = class {
-    constructor(nodeData) {
-        this.data = nodeData;
-        this.next = null;
-    }
-};
-// Complete the function below
-var isPalindrome = function (head) {
-    let current = head;
-    let obj = {};
-    while (current !== null) {
-        if (obj[current.data] === undefined) {
-            obj[current.data] = 1;
-        } else {
-            obj[current.data]++;
-        }
-        current = current.next;
-    }
-    let count = 0;
+// const LinkedListNode = class {
+//     constructor(nodeData) {
+//         this.data = nodeData;
+//         this.next = null;
+//     }
+// };
+// // Complete the function below
+// var isPalindrome = function (head) {
+//     let current = head;
+//     let obj = {};
+//     while (current !== null) {
+//         if (obj[current.data] === undefined) {
+//             obj[current.data] = 1;
+//         } else {
+//             obj[current.data]++;
+//         }
+//         current = current.next;
+//     }
+//     let count = 0;
 
-    for (let key in obj) {
-        if (obj[key] % 2 !== 0) {
-            count++;
-        }
-    }
-    if (count <= 1) {
-        return true;
-    } else {
-        return false;
-    }
-};
+//     for (let key in obj) {
+//         if (obj[key] % 2 !== 0) {
+//             count++;
+//         }
+//     }
+//     if (count <= 1) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// };
 
 
-isPalindrome(121)
+// isPalindrome(121)
 // function find(n) {
 //   if (n < 0) {
 //     return 0;
@@ -499,3 +499,99 @@ isPalindrome(121)
 
 
 
+
+
+// let count = 0;
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] ===0) {
+//         count++;
+//     }
+// }
+// // console.log(count)
+
+// arr = arr.filter((ele) => ele !== 0)
+// // console.log(arr)
+
+// while (count > 0) {
+//     arr.push(0)
+//     count--;
+// }
+
+// console.log(arr)
+
+// let arr1 = [0, 1, 2, 3, 0,12];
+// let arr2=[1,5,4,7,10,9]
+
+// let arr = [...arr1, ...arr2];
+
+// for (let i = 0; i < arr.length; i++){
+//     for (let j = 0; j < arr.length - 1 - i; j++){
+//         if (arr[j] > arr[j + 1]) {
+//             let temp = arr[j];
+//             arr[j] = arr[j + 1];
+//             arr[j + 1] = temp;
+//         }
+//     }
+// }
+// console.log(arr.join(" "))
+
+// let str = "masai is best school"
+// output=school best is masai
+
+// str = str.split(" ")
+// let bag=""
+// let word=""
+// for (let i = 0; i < str.length; i++){
+//     if (str[i] ===" ") {
+//         bag = word + " " + bag
+//         word=""
+//     } else {
+//         word=word+str[i]
+//     }
+// }
+// // console.log(word)
+// console.log(word+" "+bag)
+
+// let n = 5;
+// let sum = 1;
+// for (let i = 1; i <=n; i++){
+//     sum = sum * i;
+// }
+// console.log(sum);
+//  let num = 2085;
+//  let value = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+//     let sym = [
+//         "M",
+//         "CM",
+//         "D",
+//         "CD",
+//         "C",
+//         "XC",
+//         "L",
+//         "XL",
+//         "X",
+//         "IX",
+//         "V",
+//         "IV",
+//         "I",
+// ];
+
+// let bag = "";
+// for (let i = 0; i < value.length; i++){
+//     while (value[i] <= num) {
+//         bag = bag + sym[i];
+//         num=num-value[i]
+//     }
+// }
+// console.log(bag)
+
+
+var x = 100;
+function host () {
+    var i = 10;
+    x = i;
+
+
+}
+host()
+console.log(x)
